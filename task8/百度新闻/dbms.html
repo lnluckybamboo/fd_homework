@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-table.min.css" />
+    <link rel="stylesheet" href="css/dbms.css">
+    <title>数据库后台管理系统</title>
+</head>
+
+<body>
+    <!-- 导航 start -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- 超小屏幕时变为菜单按钮 start -->
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- 超小屏幕时变为菜单按钮 start -->
+                <!-- 导航左侧logo链接 start -->
+                <a class="navbar-brand" href="#">数据库后台管理系统</a>
+                <!-- 导航左侧logo链接 end -->
+            </div>
+            <!-- 右侧导航栏，超小屏幕时要合并到按钮中 start -->
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Settings</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </div>
+            <!-- 右侧导航栏，超小屏幕时要合并到按钮中 start -->
+        </div>
+    </nav>
+    <!-- 导航 end -->
+    <!-- 新闻列表 start -->
+    <div class="container">
+        <div class="row">
+            <div id="toolbar" class="btn-group">
+                <button id="btn_add" type="button" class="btn btn-default" data-toggle="modal" data-target="#newsModal">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>新增
+                </button>
+                <button id="btn_edit" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span>修改
+                </button>
+                <button id="btn_delete" type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>删除
+                </button>
+            </div>
+            <table id="newstable"></table>
+            <!-- Modal -->
+            <div id="newsModal" class="modal fade" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×
+                            </button>
+                            <h3 id="newsModalLabel">新闻信息</h3>
+                        </div>
+                        <div class="modal-body">
+                            <form class="form-horizontal" id="newsForm">
+                                <div id="newsidDiv" class="control-group has-feedback">
+                                    <label class="control-label" for="newsid">新闻编号：</label>
+                                    <input type="number" id="newsid" class="form-control" name="newsid" required="required" />
+                                    <!-- <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+                                    <span id="inputErrorStatus" class="sr-only">(error)</span> -->
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="newstitle">新闻标题：</label>
+                                    <input type="text" id="newstitle" class="form-control" name="newstitle" />
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="newstype">新闻类型：</label>
+                                    <select id="newstype" class="form-control">
+                                        <option value="0">推荐</option>
+                                        <option value="1">本地</option>
+                                    </select>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="newscontent">新闻内容：</label>
+                                    <textarea name="newscontent" id="newscontent" class="form-control" cols="30" rows="4"></textarea>
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="newsimg">新闻图片：</label>
+                                    <input type="text" id="newsimg" class="form-control" name="newsimg" />
+                                </div>
+                                <div class="control-group">
+                                    <label class="control-label" for="addtime">创建时间：</label>
+                                    <input type="date" id="addtime" class="form-control" name="addtime" />
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary" id="insertBtn" data-dismiss="modal">确定</button>
+                            <button class="btn btn-primary" id="updateBtn" data-dismiss="modal">保存</button>
+                            <button class="btn btn-danger" data-dismiss="modal" aria-hidden="true">取消
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <table id="newstable" ></table> -->
+        </div>
+    </div>
+    <!-- 新闻列表 end -->
+    <!-- 引入需要的js -->
+    <script src="js/jquery-1.12.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap-table.min.js"></script>
+    <script src="bootstrap/js/bootstrap-table-locale-all.min.js"></script>
+    <!-- <script src="bootstrap/js/mindmup-editabletable.js"></script> -->
+    <script src="js/dbms.js"></script>
+</body>
+
+</html>
