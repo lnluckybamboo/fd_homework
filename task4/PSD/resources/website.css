@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/website/background.png);
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+
+/*头部，包括导航和简介*/
+
+header {
+    background-image: url(images/website/headerbg.png);
+}
+
+
+/*主体部分居中*/
+
+.headcenter,
+section {
+    width: 960px;
+    margin: 0 auto;
+}
+
+
+/*导航栏*/
+
+nav {
+    height: 89px;
+    background-image: url(images/website/navbg.png);
+}
+
+
+/*导航左侧logo样式*/
+
+nav img {
+    float: left;
+    margin: 20px 0;
+}
+
+
+/*导航由无序列表组成*/
+
+nav ul {
+    float: right;
+    margin: 36px 0;
+    vertical-align: center;
+    position: relative;
+}
+
+
+/*导航列表每一项的样式*/
+
+nav li {
+    color: #fff;
+    list-style: none;
+    float: left;
+    margin-left: 20px;
+    font-family: SourceSansPro;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+/*简介部分样式*/
+
+.introduce {
+    height: 480px;
+    position: relative;
+}
+
+
+/*简介左侧样式*/
+
+.left {
+    float: left;
+}
+
+
+/*简介左侧内容区域*/
+
+.content {
+    width: 480px;
+    height: 172px;
+    margin: 100px 0 50px 0;
+    display: block;
+}
+
+
+/*简介左侧下载按钮*/
+
+.download {
+    border: none;
+    border-radius: 6px/5px;
+}
+
+
+/*简介右侧手机图片*/
+
+.mobile {
+    margin-top: -3px;
+    width: 430px;
+    height: 480px;
+    float: right;
+}
+
+
+/*How It Work部分样式*/
+
+.work {
+    height: 460px;
+}
+
+
+/*How It Work上部样式*/
+
+.work .top {
+    width: 768px;
+    margin: 100px auto 0;
+}
+
+
+/*section部分统一的标题样式*/
+
+.sectionTitle {
+    text-align: center;
+    font-family: SourceSansPro;
+    font-size: 37px;
+    color: #2e2e2e;
+}
+
+
+/*section部分统一的文字说明样式*/
+
+.sectionText {
+    text-align: center;
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #949494;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+
+/*How It Work下部分样式*/
+
+.imgGroup {
+    float: left;
+    width: 960px;
+}
+
+
+/*How It Work部分 三个图片和文字样式*/
+
+.imgGroup div {
+    float: left;
+    text-align: center;
+    width: 188px;
+    height: 167px;
+    margin: 63px;
+}
+
+
+/*What is Buckasur样式*/
+
+.what {
+    height: 642px;
+    background-image: url(images/website/whatbg.png);
+    background-size: 100% 100%;
+}
+
+
+/*What is Buckasur section的样式*/
+
+.what section {
+    position: relative;
+}
+
+
+/*向前翻页的样式*/
+
+.previous {
+    height: 642px;
+    width: 60px;
+    float: left;
+    background: url(images/website/previous.png) no-repeat center center;
+}
+
+
+/*What is Buckasur手机图片样式*/
+
+.what-mobile {
+    height: 642px;
+    width: 360px;
+    float: left;
+    background: url(images/website/what-mobile.png) no-repeat center center;
+}
+
+
+/*What is Buckasur 右侧div样式*/
+
+.whatRight {
+    height: 642px;
+    width: 480px;
+    float: left;
+}
+
+
+/*What is Buckasur 主要内容样式*/
+
+.what-content {
+    margin-top: 150px;
+}
+
+
+/*What is Buckasur 标题下文字样式*/
+
+.whatsectionText {
+    text-align: left;
+    font-family: OpenSans;
+    font-size: 16px;
+    color: #949494;
+    line-height: 18px;
+    margin-top: 5px;
+}
+
+
+/*What is Buckasur 列表样式*/
+
+.whatRight ul {
+    margin: 36px 0;
+    position: relative;
+}
+
+
+/*What is Buckasur 列表下每个选项样式*/
+
+.whatRight li {
+    font-family: OpenSans;
+    font-size: 15px;
+    color: #7f7f7f;
+    line-height: 24px;
+    list-style-position: inside;
+}
+
+
+/*What is Buckasur向后翻页样式*/
+
+.next {
+    height: 642px;
+    width: 60px;
+    float: right;
+    background: url(images/website/next.png) no-repeat center center;
+}
+
+
+/*页脚样式*/
+
+footer {
+    height: 112px;
+    background: url(images/website/footerbg.png);
+}
+
+
+/*页脚下div样式*/
+
+.footer {
+    height: 67px;
+    width: 960px;
+    text-align: center;
+    padding-top: 45px;
+    margin: 0 auto;
+}
+
+
+/*页脚版权信息样式*/
+
+.copyright,
+.nd {
+    font-family: OpenSans;
+    font-size: 18px;
+    color: #e0e0e0;
+}
+
+
+/*页脚版权信息样式*/
+
+.design {
+    color: #8557ea;
+}
+
+
+/*页脚版权信息样式*/
+
+.shuxian {
+    color: #747474;
+}
+
+
+/*页脚版权信息样式*/
+
+.right {
+    color: #e0e0e0;
+}

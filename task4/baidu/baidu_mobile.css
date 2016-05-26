@@ -1,0 +1,421 @@
+body {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background: #eeeff0;
+    overflow-x: hidden;
+}
+
+
+/*网页显示的css,在移动端不显示*/
+
+.a_hao123,
+.a_login,
+.a_settings,
+.footer_left,
+.home,
+.about_ch,
+.about_en,
+.required_read,
+.nd,
+.baidu_text,
+.opinion {
+    display: none;
+}
+
+
+/*主体部分导航和搜索样式*/
+
+.main {
+    display: -webkit-flex;
+    -webkit-flex-direction: column;
+}
+
+
+/*中间搜索部分样式*/
+
+.center {
+    -webkit-order: 2;
+}
+
+
+/*网页右侧导航样式*/
+
+.nav_right {
+    -webkit-order: 3;
+    margin-top: 5%;
+}
+
+
+/*导航链接的样式*/
+
+.nav_right a {
+    float: left;
+    width: 16%;
+    font-size: 12px;
+    font-weight: bold;
+    color: #666;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.nav_right a:first-child {
+    margin-left: 2%;
+}
+
+#navs a i {
+    display: block;
+    margin-bottom: 4px;
+    height: 48px;
+}
+
+
+/*左上角天气样式*/
+
+.weather {
+    width: 100%;
+    -webkit-order: 1;
+    margin: 0 auto 5%;
+    text-align: left;
+    display: -webkit-flex;
+}
+
+
+/*天气中文字统一样式*/
+
+.weather span {
+    color: #555;
+    margin-left: 5px;
+}
+
+
+/*天气图标样式*/
+
+.weather_img {
+    height: 2em;
+    width: auto;
+    display: block;
+}
+
+
+/*天气城市信息样式*/
+
+.city {
+    height: 2em;
+    line-height: 2em;
+    font-size: 13px;
+    -webkit-order: 2;
+}
+
+
+/*温度样式*/
+
+.temperature {
+    font-size: 26px;
+    -webkit-order: 1;
+}
+
+
+/*污染指数样式*/
+
+.pollution {
+    height: 2em;
+    line-height: 2em;
+    font-size: 13px;
+    -webkit-order: 3;
+}
+
+
+/*百度logo图片*/
+
+.logo {
+    width: 175px;
+    height: 55px;
+    margin: 10px auto;
+    background: url(http://m.baidu.com/static/index/plus/plus_logo.png) no-repeat center;
+    background-size: 100% 100%;
+}
+
+.search {
+    width: 100%;
+    position: relative;
+}
+
+
+/*搜索框样式*/
+
+.searchText {
+    margin: 0;
+    /*padding: 7px 42px 7px 6px;*/
+    width: 71%;
+    height: 42px;
+    line-height: 28px;
+    resize: none;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    float: left;
+    border-radius: 0;
+    -webkit-appearance: none;
+    /*解决iphone safari上的圆角问题*/
+}
+
+
+/*搜索按钮样式*/
+
+.searchSubmit {
+    width: 29%;
+    height: 42px;
+    background: #38f;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 42px;
+    letter-spacing: -1px;
+    font-size: 15px;
+    border: 1px solid #38f;
+    float: right;
+    border-radius: 0;
+    -webkit-appearance: none;
+    /*解决iphone safari上的圆角问题*/
+}
+
+section {
+    background: #fff;
+    margin: 5% auto;
+    position: relative;
+}
+
+
+/*常用地址整体样式*/
+
+.used_addr {
+    height: 124px;
+}
+
+
+/*百度推荐整体样式*/
+
+.news {
+    height: 281px;
+}
+
+
+/*交通路况整体样式*/
+
+.traffic {
+    height: 112px;
+}
+
+
+/*常用地址头部样式*/
+
+.section_title {
+    position: relative;
+    height: 40px;
+}
+
+
+/*常用地址标题样式*/
+
+.section_title h2 {
+    line-height: 40px;
+    font-size: 15px;
+    font-weight: normal;
+    color: #999;
+    display: inline;
+    float: left;
+    margin: 2px auto 0 14px;
+}
+
+
+/*常用地址右侧菜单样式*/
+
+.icon-menu {
+    float: right;
+    margin: 4px 14px 0;
+}
+
+
+/*常用地址内容样式*/
+
+.section_content {
+    width: 100%;
+    position: absolute;
+    display: block;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+/*常用地址a标签样式*/
+
+.used_addr a {
+    float: left;
+    display: block;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0 6px;
+    width: 25%;
+    height: 42px;
+    line-height: 42px;
+    color: #262626;
+    text-decoration: none;
+}
+
+
+/*百度推荐内容样式*/
+
+.newsContent {
+    padding: 0 12px;
+    text-align: left;
+    list-style: none;
+}
+
+
+/*百度推荐内容中图片样式*/
+
+.newsContent img {
+    width: 83px;
+    height: 50px;
+}
+
+
+/*百度推荐内容中列表项通用样式*/
+
+.newsContent li {
+    border-bottom: 1px solid #f0f0f0;
+    padding: 0 2px;
+    display: list-item;
+}
+
+
+/*百度推荐内容中第一个带图片列表项样式*/
+
+.newsContent li:first-child {
+    height: 50px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #f7f6f6;
+}
+
+
+/*百度推荐内容中第一个列表项时间样式*/
+
+.newsContent li:first-child .time {
+    bottom: -10px;
+    left: 94px;
+}
+
+
+/*百度推荐内容中第一个列表项图片文字说明样式*/
+
+.newsContent li:first-child .imgTitle {
+    position: absolute;
+    left: 83px;
+    padding-left: 10px;
+    font-size: 15px;
+    display: -webkit-inline-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 17px;
+}
+
+
+/*百度推荐内容中列表项除了第一项样式*/
+
+.newsContent li:not(:first-child) {
+    line-height: 41px;
+}
+
+
+/*百度推荐内容中列表项a标签样式*/
+
+.newsContent a {
+    color: #262626;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    height: 41px;
+}
+
+
+/*百度推荐内容中标题文字样式*/
+
+.newsTitle {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 85%;
+    display: inline-block;
+}
+
+
+/*百度推荐内容中时间样式*/
+
+.time {
+    position: absolute;
+    right: 0;
+    font-size: 12px;
+    color: #999;
+}
+
+
+/*百度推荐内容中查看更多推荐样式*/
+
+.last-more {
+    float: right;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+
+/*交通状况a标签样式*/
+
+.traffic a {
+    text-decoration: none;
+}
+
+
+/*交通状况第一行文字样式*/
+
+.traffic p:first-child {
+    margin-bottom: 10px;
+    line-height: 15px;
+    font-size: 15px;
+    color: #0058d2;
+}
+
+
+/*交通状况第二行文字样式*/
+
+.traffic p:last-child {
+    line-height: 14px;
+    font-size: 14px;
+    color: #262626;
+}
+
+
+/*管理我的卡片样式*/
+
+.card_manager {
+    padding: 0 8px;
+    line-height: 45px;
+    height: 45px;
+    color: #333;
+    font-size: 14px;
+    text-indent: -8px;
+    background: #fff;
+    background-clip: content-box;
+}
+
+
+/*页脚信息样式*/
+
+.required_read_mobile,
+.certificate_no {
+    display: inline;
+    font: 12px arial;
+    color: #999;
+    text-decoration: none;
+}

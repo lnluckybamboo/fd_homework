@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?pv1j0c');
+    src:    url('fonts/icomoon.eot?pv1j0c#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?pv1j0c') format('truetype'),
+        url('fonts/icomoon.woff?pv1j0c') format('woff'),
+        url('fonts/icomoon.svg?pv1j0c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-size:20px;
+    color:#666;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1.5;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e901";
+}
+.icon-newspaper:before {
+    content: "\e900";
+}
+.icon-film:before {
+    content: "\e902";
+}
+.icon-book:before {
+    content: "\e903";
+}
+.icon-location2:before {
+    content: "\e904";
+}
+.icon-menu:before {
+    content: "\e906";
+}
+.icon-plus:before {
+    content: "\e907";
+}
+.icon-circle-down:before {
+    content: "\e905";
+}
+

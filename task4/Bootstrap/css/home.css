@@ -1,0 +1,21 @@
+/*解决页面主内容顶部和底部都被固定导航条遮住的问题*/
+
+body {
+    padding-top: 70px;
+    /*有顶部固定导航条时设置*/
+    padding-bottom: 70px;
+    /*有底部固定导航条时设置*/
+}
+
+
+/*网页版固定左侧边栏*/
+
+.navbar-vertical-left {
+    position: fixed;
+    left: 0;
+    /*有顶部固定导航条时设置*/
+    top: 70px;
+    height: 100%;
+    border: none;
+    z-index: 999;
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="interview.css" />
+    <title>html/css面试题</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="title">Html/CSS面试题</h2>
+    </header>
+    <section class="main">
+        <ul>
+            <li>
+                <h2 class="question">对WEB标准以及W3C的理解与认识</h2>
+                <div class="answer">
+                    <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">Doctype是什么？如何触发严格模式与混杂模式模式？区分它们有何意义？</h2>
+                <div class="answer">
+                    <p>Doctype是document type（文档类型）的简写，是用来说明所用的XHTML或HTML是什么版本的。XHTML1.0 提供了三种DTD声明可供选择，分别是：</p>
+                    <ol>
+                        <li>过渡的(Transitional，也叫混杂模式)：要求比较宽松，允许继续使用HTML4.01的标识，完整声明为
+                            <pre><span>&lt;!</span>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tranisitional.dtd"<span>&gt;</span></pre>
+                        </li>
+                        <li>严格的(Strict)：要求严格的DTD，不能使用任何表现层的标识和属性，完整声明为
+                            <pre><span>&lt;!</span>DOCTYPE html PUBLIC "-W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"<span>&gt;</span></pre>
+                        </li>
+                        <li>框架的(Frameset)：专门针对框架页面设计使用的DTD，如果页面中包含有框架，可以采用DTD，完整声明为
+                            <pre><span>&lt;!</span>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"<span>&gt;</span></pre>
+                        </li>
+                    </ol>
+                    <p>定义成相应的声明就可以触发相应的模式。 </p>
+                    <p>区分的意义是为了最终能达到数据与表现相分离的目地。</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">行内元素和块级元素各有哪些？</h2>
+                <div class="answer">
+                    <p>行内元素会再一条直线上，是在同一行的;块级元素会各占一行</p>
+                    <p>
+                        行内元素主要有： <pre>&lt;span&gt;、&lt;a&gt;、&lt;b&gt;、&lt;img&gt;、&lt;br&gt;、&lt;button&gt;、&lt;strong&gt;、&lt;textarea&gt;、&lt;select&gt;</pre>
+                    </p>
+                    <p>
+                        块级元素主要有： <pre>&lt;div&gt;、&lt;ul&gt;、&lt;li&gt;、&lt;p&gt;、&lt;fieldset&gt;、&lt;form&gt;、&lt;h1&gt;、&lt;h2&gt;、&lt;h3&gt;、&lt;h4&gt;、&lt;h5&gt;、&lt;h6&gt;、&lt;hr&gt;、&lt;iframe&gt;、&lt;ol&gt;、&lt;pre&gt;、&lt;table&gt;、&lt;tr&gt;、&lt;td&gt;</pre>
+                    </p>
+                    <p>行内元素可以通过display:block转为块级元素。另外块级元素的margin和padding都正常，行内元素左右maring和左右padding正常，上下不识别，也就是说不能通过margin-top和padding-top来改变行高。</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">CSS引入的方式有哪些?</h2>
+                <div class="answer">
+                    <ol>
+                        <li>使用&lt;link&gt;元素链接到外部的样式文件</li>
+                        <li>在&lt;head&gt;元素中使用"style"元素来指定</li>
+                        <li>使用CSS "@import"标记来导入样式表单</li>
+                        <li>在&lt;body&gt;内部的元素中使用"style"属性来定义样式</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">CSS选择符有哪些？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>通配选择符：*{margin:0px;}</li>
+                        <li>类型选择符：a{text-decoration:none;}</li>
+                        <li>属性选择符：input[type="button"]{padding:5px;}</li>
+                        <li>包含选择符：div.code a{text-decoration:none;}</li>
+                        <li>子对象选择符：ul.test>li{font-size:14px;}</li>
+                        <li>ID选择符：#test {color:red;}</li>
+                        <li>类选择符：.test{color:red;}</li>
+                        <li>选择符分组：body,ul,li{margin:0px;}</li>
+                        <li>伪类及伪对象选择符：div:first-letter{font-size:16px;}、a.test:hover{text-decoration:underline;}</li>
+                        <li>相邻选择符：li+li{font-weight:bold;}</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">优先级算法如何计算？</h2>
+                <div class="answer">
+                    <p>重要性和来源的优先级排序从低到高是：</p>
+                    <ol>
+                        <li>浏览器默认样式</li>
+                        <li>用户在浏览器中定义的普通样式（normal规则，不带important规则）</li>
+                        <li>开发人员定义的普通样式（ normal规则，不带important规则）</li>
+                        <li>开发人员定义特殊样式（带important规则）</li>
+                        <li>用户在浏览器中定义特殊样式（带important规则）</li>
+                    </ol>
+                    <p>另外还有一些原则：</p>
+                    <ol>
+                        <li>相同的样式在CSS规则后添加了!important的优先于没有添加的。</li>
+                        <li>CSS规则在文档中出现的顺序后面定义的的优先于前面定义的。</li>
+                        <li>内联样式优先于用link引入的样式和页面上&lt;style&gt;里的样式。</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">前端页面有哪三层构成，分别是什么？作用是什么？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>结构层：由 HTML 或 XHTML 之类的标记语言负责创建，仅负责语义的表达。解决了页面“内容是什么”的问题。</li>
+                        <li>表示层：由CSS负责创建，解决了页面“如何显示内容”的问题。</li>
+                        <li>行为层：由脚本负责。解决了页面上“内容应该如何对事件作出反应”的问题。</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">css的基本语句构成是什么？</h2>
+                <div class="answer">
+                    <p>选择符{属性1:值1;属性2:值2;...}等。</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">主流的浏览器分别是什么内核？</h2>
+                <div class="answer">
+                    <ul>
+                        <li>IE：Trident内核</li>
+                        <li>Mozilla FireFox：Gecko内核</li>
+                        <li>Chrome、Safari：Webkit内核</li>
+                        <li>Opera：Presto内核</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">经常遇到的浏览器兼容性有哪些？如何解决？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</li>
+                        <li>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。解决方案是在float的标签样式控制中加入 display:inline;将其转化为行内属性。</li>
+                        <li>在ie6，ie7中元素高度超出自己设置高度。原因是IE8以前的浏览器中会给元素设置默认的行高的高度 导致的。解决方案是加上overflow:hidden或设置line-height为更小的高度。
+                            <pre>.one{
+    height:5px;
+    width:100px;
+    overflow:hidden;
+    background:#F60;
+}
+/*--或--*/
+.one{
+    height:5px;
+    width:100px;
+    font-size:2px;
+    line-height:2px;
+    background:#F60;
+}</pre>
+                            <p>注意这里加了line-height:2px后还要加上font-size才行。</p>
+                        </li>
+                        <li>min-height在IE6下不起作用。解决方案是添加 height:auto !important;height:xxpx;其中xx就是min-height设置的值。</li>
+                        <li>透明性IE用filter:Alpha(Opacity=60)，而其他主流浏览器用 opacity:0.6;</li>
+                        <li>a(有href属性)标签嵌套下的img标签，在IE下会带有边框。解决办法是加上a img{border:none;}样式。</li>
+                        <li>input边框问题。去掉input边框一般用border:none;就可以，但由于IE6在解析input样式时的BUG(优先级问题)，在IE6下无效。
+                            <p>ie6的默认CSS样式，涉及到border的有border-style:inset;border-width:2px;浏览器根据自己的内核解析规则，先解析自身的默认CSS，再解析开发者书写的CSS，达到渲染标签的目的。IE6对INPUT的渲染存在bug，border:none;不被解析，当有border-width或border-color设置的时候才会令IE6去解析border-style:none;。</p>
+                            <p>解决方案是用:border:0或border:0 none;或border:none:border-color:transparent;，推荐用第三种方案。</p>
+                        </li>
+                        <li>父子标签间用margin的问题，表现在有时除IE(6/7)外的浏览器子标签margin转移到了父标签上，IE6&7下没有转移。
+                            <p>解决办法就是父子标签间的间隔建议用padding，兄弟标签间用margin。</p>
+                        </li>
+                        <li>假设两块div，第一块浮动而第二块没有浮动，IE6下第二块就会跑到第一块边上，并且二者之间还留有间距，但标准浏览器中是第二块重合于第一块。
+                            <p>解决办法是改变设计思路，如果真有两个div重合的需求，可以用下面的代码实现：</p>
+                        </li>
+                        <li>父子关系的标签，子标签浮动导致父标签不再包裹子标签。清除浮动就行了</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">如何居中一个浮动元素?</h2>
+                <div class="answer">
+                    父元素和子元素同时左浮动，然后父元素相对左移动50%，再然后子元素相对右移动50%，或者子元素相对左移动-50%也就可以了。
+                </div>
+            </li>
+            <li>
+                <h2 class="question">如何管理CSS文件、JS与图片？</h2>
+                <div class="answer">
+                    父元素和子元素同时左浮动，然后父元素相对左移动50%，再然后子元素相对右移动50%，或者子元素相对左移动-50%也就可以了。
+                    <ol>
+                        <li>对各个项目中CSS，JS里的稳定的通用代码进行提取，形成公共文件，然后利用CDN等资源进行缓存，减轻服务器压力。</li>
+                        <li>去掉JS、CSS里的冗余代码，对代码进行精减。</li>
+                        <li>对JS、CSS进行压缩合并，减少请求次数。</li>
+                        <li>对页面上的小图标，背景等图片进行合并，减少请求次数。</li>
+                        <li>JS、CSS、图片均用版本控制工具进行管理，方便修改与恢复。</li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

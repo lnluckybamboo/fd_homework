@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*头部背景样式*/
+
+.header {
+    width: 100%;
+    height: 0;
+    padding-bottom: 5.46297%;
+    background: url(images/mobile/statusbar.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*导航部分背景样式*/
+
+.nav {
+    width: 100%;
+    height: 0;
+    padding-bottom: 172.5%;
+    background: url(images/mobile/navbg.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*How It Work 部分背景样式*/
+
+.content_how {
+    width: 100%;
+    height: 0;
+    padding-bottom: 344.4444%;
+    background: url(images/mobile/howbg.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*What is Buckasur 部分背景样式*/
+
+.content_what {
+    width: 100%;
+    height: 0;
+    padding-bottom: 300.741427%;
+    background: url(images/mobile/whatbg.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*页脚部分背景样式*/
+
+.footer {
+    width: 100%;
+    height: 0;
+    padding-bottom: 27.6851%;
+    background: url(images/mobile/footerbg.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*导航上半部样式*/
+
+.navtop {
+    width: 90%;
+    height: 0;
+    margin: 0 auto;
+    padding-bottom: 27.4167%;
+    background: url(images/mobile/navlogobg.png) no-repeat center;
+}
+
+
+/*导航左侧logo样式*/
+
+.logo {
+    width: 50%;
+    height: 0;
+    padding-bottom: 11.2939%;
+    float: left;
+    margin: 9% 0;
+    background: url(images/mobile/logo.png) no-repeat;
+    background-size: 100% auto;
+}
+
+
+/*导航右侧menu样式*/
+
+.menu {
+    width: 10%;
+    height: 0;
+    padding-bottom: 7.2093%;
+    float: right;
+    margin: 11% 0;
+    background: url(images/mobile/menu.png) no-repeat;
+    background-size: 100% auto;
+}
+
+
+/*简介中文字介绍样式*/
+
+.introduce>.title,
+.introduce>.content {
+    font-family: SourceSansPro;
+    color: #fff;
+    margin: 5% auto;
+    text-align: center;
+}
+
+
+/*简介文字标题样式*/
+
+.introduce>.title {
+    width: 90%;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+/*简介文字内容样式*/
+
+.introduce>.content {
+    width: 65%;
+    font-size: 1.2em;
+}
+
+
+/*简介中下载按钮样式*/
+
+.button {
+    display: block;
+    width: 50%;
+    height: 0;
+    padding-bottom: 13.4387%;
+    margin: 5% auto;
+    border: none;
+    background: url(images/mobile/downloadbutton.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*简介中手机图片样式*/
+
+.introduce>.iphone {
+    width: 70%;
+    height: 0;
+    padding-bottom: 82.503383%;
+    margin: 8% auto 0 auto;
+    background: url(images/mobile/iphone.png) no-repeat center;
+    background-size: 100% auto;
+}
+
+
+/*How It Work内容中图片样式*/
+
+.search,
+.track,
+.notification {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 10% auto;
+}
+
+
+/*How It Work内容中标题和内容样式*/
+
+.content_how>.title,
+.content_how>.content {
+    width: 90%;
+    margin: 20% auto 10% auto;
+    text-align: center;
+}
+
+
+/*How It Work内容中标题样式*/
+
+.content_how>.title {
+    font-family: SourceSansPro;
+    font-size: 2em;
+    color: #2e2e2e;
+}
+
+
+/*How It Work内容中内容样式*/
+
+.content_how>.content {
+    font-family: OpenSans;
+    font-size: 1.5em;
+    color: #949494;
+    line-height: 1em;
+}
+
+
+/*What is Buckasur内容中标题样式*/
+
+.content_what>.title {
+    width: 90%;
+    font-family: SourceSansPro;
+    font-size: 2em;
+    color: #3f4244;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/*What is Buckasur内容文字样式*/
+
+.content_what>.content {
+    width: 90%;
+    font-family: SourceSansPro;
+    font-size: 1em;
+    color: #7f7f7f;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/*What is Buckasur 列表样式*/
+
+li {
+    width: 90%;
+    list-style: disc;
+    margin: 1% 10%;
+    font-family: OpenSans;
+    font-size: 1em;
+    color: #7f7f7f;
+}
+
+
+/*What is Buckasur最下方图片样式*/
+
+.whatiphone {
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 10% auto;
+}
+/*页脚样式*/
+.footer {
+    text-align: center;
+    position: absolute;
+}
+/*页脚第一行样式*/
+.line1 {
+    margin-top: 8%;
+}
+/*页脚第二行样式*/
+.line2 {
+    margin-bottom: 8%;
+}
+
+
+/*页脚版权信息样式*/
+
+.copyright,
+.nd,
+.right {
+    font-family: OpenSans;
+    color: #e0e0e0;
+}
+
+
+/*页脚版权信息样式*/
+
+.design {
+    color: #8557ea;
+}
+
+
+/*页脚版权信息样式*/
+
+.shuxian {
+    color: #747474;
+}
