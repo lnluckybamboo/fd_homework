@@ -1,0 +1,170 @@
+@color-green: #0a0;
+@color-red: #f00;
+@color-white: #fff;
+@color-black: #000;
+@font-big: 140px;
+@font-normal: 42px;
+@font-small: 24px;
+body,
+header,
+footer,
+div,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background:@color-white;
+}
+
+/* 字体样式 */
+.font {
+    font-weight: bold;
+    font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", Heiti, "黑体", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", sans-serif
+}
+/* css三角，显示下边框 */
+.bottomborder-show {
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+/* 清除浮动 */
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+
+.container {
+    width: 100%;
+    min-width: 1300px;
+    /* 头部样式 */
+    header {
+        height: 220px;
+        background: @color-white;
+        padding-top: 30px;
+        .font;
+        /* 公交车号样式 */
+        .left {
+            width: 30%;
+            float: left;
+            .busno {
+                color: @color-white;
+                font-size: @font-big;
+                padding-left: 25%;
+                background: @color-red;
+            }
+            .bustimediv {
+                .bustime {
+                    color: @color-black;
+                    font-size: @font-small;
+                    padding-top: 10px;
+                    float: right;
+                }
+            }
+        }
+        /* 终点站样式 */
+        .right {
+            width: 70%;
+            height: 100%;
+            float: right;
+            font-size: @font-normal;
+            text-align: center;
+            p {
+                margin-bottom: 10px;
+            }
+            .station {
+                color: @color-green;
+                .ch-sta {
+                    font-weight: bolder;
+                }
+                .en-sta {
+                    font-size: @font-small;
+                    font-weight: normal;
+                }
+            }
+            .curstation {
+                color: @color-red;
+                margin-top:30px;
+            }
+        }
+    }
+    /* 公交站名样式 */
+    .content {
+        width: 100%;
+        padding-top: 5px;
+        background: @color-green;
+        color: @color-white;
+        .font;
+        font-size: @font-small;
+        ul {
+            height: 230px;
+            list-style: none;
+            li {
+                width: 28px;
+                float: left;
+                padding-left: 29px;
+                padding-right: 29px;
+                text-align: center;
+            }
+        }
+        /* 当前所在站箭头样式 */
+        .curarrowdiv {
+            height: 60px;
+            .curarrow {
+                .arrowtop {
+                    width: 0;
+                    height: 0;
+                    border: 16px solid @color-white;
+                    .bottomborder-show;
+                    margin-left: 28px;
+                    margin-top: -10px;
+                }
+                .arrowbottom {
+                    width: 16px;
+                    height: 15px;
+                    margin-left: 36px;
+                    background: @color-white;
+                }
+            }
+        }
+    }
+    footer {
+        height: 75px;
+        color: @color-black;
+        background: @color-white;
+        .price {
+            font-size: @font-small;
+            font-weight: bold;
+            margin-top: 15px;
+            text-align: center;
+        }
+        /* 发车方向样式 */
+        .direction {
+            .outtriangle {
+                width: 800px;
+                height: 0;
+                border-right: 120px solid @color-red;
+                border-bottom: 20px solid @color-red;
+                .bottomborder-show;
+                margin:-10px auto;
+                background:@color-white;
+                .innertriangle {
+                    width: 795px;
+                    height: 0;
+                    border-right: 50px solid @color-white;
+                    border-bottom: 15px solid @color-white;
+                    .bottomborder-show;
+                } 
+            }
+        }
+    }
+}
