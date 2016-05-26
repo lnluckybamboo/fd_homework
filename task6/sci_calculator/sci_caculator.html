@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/sci_caculator.css" type="text/css" />
+    <title>科学计算器</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <h3>计算器</h3>
+            <div class="caculator">
+                <!-- 结果框 start -->
+                <input type="text" class="result-view" id="result-view" readonly="readonly" />
+                <!-- 结果框 end -->
+                <!-- 基本运算 start -->
+                <table class="table-basic" id="table-basic">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="button" value="7" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="8" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="9" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="/" name="op">
+                            </td>
+                            <td>
+                                <input type="button" value="退格" id="backspace">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="4" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="5" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="6" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="*" name="op">
+                            </td>
+                            <td>
+                                <input type="button" value="清屏" id="clear">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="1" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="2" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="3" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="-" name="op">
+                            </td>
+                            <td rowspan="2">
+                                <input type="button" value="=" id="equal">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="0" name="basic-num">
+                            </td>
+                            <td>
+                                <input type="button" value="." name="basic-num" id="dot">
+                            </td>
+                            <td>
+                                <input type="button" value="+/-" id="trans">
+                            </td>
+                            <td>
+                                <input type="button" value="+" name="op">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 基本运算 end -->
+                <!-- 三角函数等的运算 start -->
+                <table class="table-science" id="table-science">
+                    <tbody>
+                        <tr>
+                            <td>
+                                <input type="button" value="sin">
+                            </td>
+                            <td>
+                                <input type="button" value="cos">
+                            </td>
+                            <td>
+                                <input type="button" value="tan">
+                            </td>
+                            <td>
+                                <input type="button" value="exp">
+                            </td>
+                            <td>
+                                <input type="button" value="pow">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="button" value="asin">
+                            </td>
+                            <td>
+                                <input type="button" value="acos">
+                            </td>
+                            <td>
+                                <input type="button" value="atan">
+                            </td>
+                            <td>
+                                <input type="button" value="log">
+                            </td>
+                            <td>
+                                <input type="button" value="sqrt">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 三角函数等的运算 end -->
+            </div>
+        </div>
+    </div>
+    <script language="javascript" src="sci_calculator.js"></script>
+</body>
+
+</html>

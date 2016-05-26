@@ -1,0 +1,323 @@
+body {
+    background-color: #eff0f0;
+}
+
+header {
+    width: 990px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+
+/*头部天气样式*/
+
+.weather {
+    margin: 18px;
+    display: inline;
+}
+
+
+/*头部文字样式*/
+
+header span {
+    vertical-align: top;
+    width: 24px;
+    height: 60px;
+    line-height: 60px;
+    font-family: 'arial';
+    font-size: 12px;
+    color: #999;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+/*头部所有链接样式*/
+
+.links {
+    display: inline-flex;
+    float: right;
+}
+
+header .links a {
+    width: 68px;
+    height: 60px;
+    margin: auto 5px;
+    text-decoration: none;
+}
+
+
+/*头部链接文字样式*/
+
+header .links a span {
+    width: 36px;
+    margin: auto 0;
+    float: right;
+}
+
+
+/*头部链接图标*/
+
+.login {
+    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/gy/GB/tZ/y3/-e/2/index_widthlg.png') -30px -110px no-repeat;
+}
+
+.email {
+    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/gy/GB/tZ/y3/-e/2/index_widthlg.png') -96px -108px no-repeat;
+}
+
+.browser {
+    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/gy/GB/tZ/y3/-e/2/index_widthlg.png') -162px -109px no-repeat;
+}
+
+.cloth {
+    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/gy/GB/tZ/y3/-e/2/index_widthlg.png') -244px -108px no-repeat;
+}
+
+
+/*百度搜索样式*/
+
+.search {
+    width: 800px;
+    height: 40px;
+    margin: 20px auto;
+}
+
+
+/*以下为百度搜索图片样式*/
+
+.baiduLogo {
+    width: 120px;
+    height: 40px;
+    float: left;
+    background: url(https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/gy/GB/tZ/y3/-e/2/index_widthlg.png) -10px -212px no-repeat;
+}
+
+.search-input {
+    width: 392px;
+    height: 38px;
+    line-height: 38px;
+    font-size: 18px;
+    float: left;
+    margin-left: 20px;
+}
+
+.search-submit {
+    width: 118px;
+    height: 44px;
+    border: none;
+    float: left;
+    background: url('https://gss1.bdstatic.com/5eN1dDebRNRTm2_p8IuM_a/v5/gy/GB/tZ/y3/-e/2/index_widthlg.png') no-repeat -699px -207px
+}
+
+
+/*以下为颜色选择器样式*/
+
+.colors {
+    width: 128px;
+    height: 40px;
+    float: right;
+}
+
+.colors ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.colors ul li {
+    float: left;
+    margin: auto 5px;
+    cursor: pointer;
+}
+
+.colors button[id^="cloth-"] {
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+#cloth-orange {
+    background: #fa3;
+}
+
+#cloth-green {
+    background: #6f6;
+}
+
+#cloth-blue {
+    background: #3cf;
+}
+
+
+/*导航栏样式*/
+
+.navigation ul {
+    width: 1190px;
+    height: 38px;
+    margin: 10px auto;
+    display: flex;
+    border-top: 2px solid #099e6a;
+    border-bottom: 1px solid #eaeaea;
+    background: #fff;
+    padding: 0;
+    list-style-type: none;
+}
+
+.navigation ul li {
+    height: 38px;
+    line-height: 38px;
+    margin: 0;
+    text-align: center;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+    flex: 1;
+    float: left;
+    cursor: pointer;
+}
+
+.navigation ul li:first-child {
+    color: #fff;
+    background: #0aa770;
+}
+
+
+/*主体部分样式*/
+
+.main {
+    position: relative;
+    margin-left: 80px;
+}
+
+
+/*左侧星标网址样式*/
+
+.left {
+    float: left;
+}
+
+.left-section1 {
+    width: 278px;
+    height: 149px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+}
+
+.main ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.left-section1 ul li {
+    width: 128px;
+    height: 20px;
+    float: left;
+    padding: 5px;
+}
+
+.main a {
+    vertical-align: middle;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+.left-section1 .split {
+    color: #999;
+    position: relative;
+    top: 1px;
+}
+
+.left-section2 {
+    width: 278px;
+    height: 24px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+}
+
+.left-section2 i {
+    margin-left: 5px;
+}
+
+.left-section2 a {
+    font-size: 12px;
+    margin: 0 8px;
+}
+
+
+/*主体部分中间样式*/
+
+.center {
+    width: 880px;
+    background: #fff;
+    border: 1px solid #adb;
+    margin-left: 10px;
+    float: left;
+}
+
+.clearfloat:after {
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.clearfloat {
+    zoom: 1;
+}
+
+.common-website,
+.famous-website {
+    margin: 0 15px;
+    padding: 20px;
+}
+
+.common-website ul li,
+.famous-website ul li {
+    width: 135px;
+    float: left;
+    text-align: left;
+}
+
+.common-website li a:first-child {
+    padding: 2px 0 2px 25px;
+    line-height: 30px;
+}
+
+.baidu {
+    background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -198px;
+}
+
+.sina {
+    background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -278px;
+}
+
+.sohu {
+    background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -318px;
+}
+
+.tencent {
+    background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -38px;
+}
+
+.taobao {
+    background: url(https://gss0.bdstatic.com/5eR1dDebRNRTm2_p8IuM_a/res/img/defaultIcon1229.png) no-repeat 2px -358px;
+}
+
+.tianmao {
+    background: url(https://gss3.bdstatic.com/5bVXsj_p_tVS5dKfpU_Y_D3/urlicon/10138.2.png) no-repeat;
+}
+
+.line {
+    height: 1px;
+    border-top: 1px solid #ddd;
+    margin: 0 20px;
+}
+
+.famous-website a {
+    color: #fa3;
+}

@@ -1,0 +1,80 @@
+/*最外部容器*/
+
+.wrapper {
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*标题居中*/
+
+.main {
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+/*计算器外壳*/
+
+.caculator {
+    border-radius: 5px;
+    padding: 20px;
+    background: #808080;
+    z-index: -1;
+    behavior: url(ie-css3.htc);
+}
+
+
+/*结果显示器*/
+
+#result-view {
+    width: 480px;
+    height: 50px;
+    line-height: 50px;
+    border: 0;
+    font-size: 24px;
+    font-family: "microsoft yahei", Helvetica, sans-serif;
+    text-align: right;
+    letter-spacing: normal;
+    border-radius: 3px;
+    padding: 0 10px;
+    margin: 10px 0;
+    behavior: url(ie-css3.htc);
+}
+
+table {
+    margin: auto;
+}
+
+
+/*按钮间间隔*/
+
+td {
+    padding: 3px;
+}
+
+
+/*按钮样式*/
+
+table input {
+    width: 95px;
+    height: 45px;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    font-size: 18px;
+    font-family: "microsoft yahei", Helvetica, sans-serif;
+    background: #009fcc;
+    behavior: url(ie-css3.htc);
+}
+
+
+/*等于号大小为2倍高度*/
+
+#equal {
+    height: 96px;
+}
