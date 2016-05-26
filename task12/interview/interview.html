@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="interview.css" />
+    <title>html/css面试题</title>
+</head>
+
+<body>
+    <div>
+        <h2 class="title">Html/CSS面试题</h2>
+    </div>
+    <div class="main">
+        <ul>
+            <li>
+                <h2 class="question">说说你对语义化的理解？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>去掉或者丢失样式的时候能够让页面呈现出清晰的结构</li>
+                        <li>有利于SEO：和搜索引擎建立良好沟通，有助于爬虫抓取更多的有效信息：爬虫依赖于标签来确定上下文和各个关键字的权重；</li>
+                        <li>方便其他设备解析（如屏幕阅读器、盲人阅读器、移动设备）以意义的方式来渲染网页；</li>
+                        <li>便于团队开发和维护，语义化更具可读性，是下一步吧网页的重要动向，遵循W3C标准的团队都遵循这个标准，可以减少差异化。</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">对WEB标准以及W3C的理解与认识</h2>
+                <div class="answer">
+                    <p>标签闭合、标签小写、不乱嵌套、提高搜索机器人搜索几率、使用外链css和js脚本、结构行为表现的分离、文件下载与页面速度更快、内容能被更多的用户所访问、内容能被更广泛的设备所访问、更少的代码和组件，容易维护、改版方便，不需要变动页面内容、提供打印版本而不需要复制内容、提高网站易用性;</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">Doctype是什么？如何触发严格模式与混杂模式模式？区分它们有何意义？</h2>
+                <div class="answer">
+                    <p>Doctype是document type（文档类型）的简写，是用来说明所用的XHTML或HTML是什么版本的。XHTML1.0 提供了三种DTD声明可供选择，分别是：</p>
+                    <ol>
+                        <li>过渡的(Transitional，也叫混杂模式)：要求比较宽松，允许继续使用HTML4.01的标识，完整声明为
+                            <pre><span>&lt;!</span>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tranisitional.dtd"<span>&gt;</span></pre>
+                        </li>
+                        <li>严格的(Strict)：要求严格的DTD，不能使用任何表现层的标识和属性，完整声明为
+                            <pre><span>&lt;!</span>DOCTYPE html PUBLIC "-W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"<span>&gt;</span></pre>
+                        </li>
+                        <li>框架的(Frameset)：专门针对框架页面设计使用的DTD，如果页面中包含有框架，可以采用DTD，完整声明为
+                            <pre><span>&lt;!</span>DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd"<span>&gt;</span></pre>
+                        </li>
+                    </ol>
+                    <p>定义成相应的声明就可以触发相应的模式。 </p>
+                    <p>区分的意义是为了最终能达到数据与表现相分离的目地。</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">行内元素和块级元素各有哪些？</h2>
+                <div class="answer">
+                    <p>行内元素会再一条直线上，是在同一行的;块级元素会各占一行</p>
+                    <p>
+                        行内元素主要有： <pre>&lt;span&gt;、&lt;a&gt;、&lt;b&gt;、&lt;img&gt;、&lt;br&gt;、&lt;button&gt;、&lt;strong&gt;、&lt;textarea&gt;、&lt;select&gt;</pre>
+                    </p>
+                    <p>
+                        块级元素主要有： <pre>&lt;div&gt;、&lt;ul&gt;、&lt;li&gt;、&lt;p&gt;、&lt;fieldset&gt;、&lt;form&gt;、&lt;h1&gt;、&lt;h2&gt;、&lt;h3&gt;、&lt;h4&gt;、&lt;h5&gt;、&lt;h6&gt;、&lt;hr&gt;、&lt;iframe&gt;、&lt;ol&gt;、&lt;pre&gt;、&lt;table&gt;、&lt;tr&gt;、&lt;td&gt;</pre>
+                    </p>
+                    <p>行内元素可以通过display:block转为块级元素。另外块级元素的margin和padding都正常，行内元素左右maring和左右padding正常，上下不识别，也就是说不能通过margin-top和padding-top来改变行高。</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">CSS引入的方式有哪些?</h2>
+                <div class="answer">
+                    <ol>
+                        <li>使用&lt;link&gt;元素链接到外部的样式文件</li>
+                        <li>在&lt;head&gt;元素中使用"style"元素来指定</li>
+                        <li>使用CSS "@import"标记来导入样式表单</li>
+                        <li>在&lt;body&gt;内部的元素中使用"style"属性来定义样式</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">CSS选择符有哪些？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>通配选择符：*{margin:0px;}</li>
+                        <li>类型选择符：a{text-decoration:none;}</li>
+                        <li>属性选择符：input[type="button"]{padding:5px;}</li>
+                        <li>包含选择符：div.code a{text-decoration:none;}</li>
+                        <li>子对象选择符：ul.test>li{font-size:14px;}</li>
+                        <li>ID选择符：#test {color:red;}</li>
+                        <li>类选择符：.test{color:red;}</li>
+                        <li>选择符分组：body,ul,li{margin:0px;}</li>
+                        <li>伪类及伪对象选择符：div:first-letter{font-size:16px;}、a.test:hover{text-decoration:underline;}</li>
+                        <li>相邻选择符：li+li{font-weight:bold;}</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">优先级算法如何计算？</h2>
+                <div class="answer">
+                    <p>重要性和来源的优先级排序从低到高是：</p>
+                    <ol>
+                        <li>浏览器默认样式</li>
+                        <li>用户在浏览器中定义的普通样式（normal规则，不带important规则）</li>
+                        <li>开发人员定义的普通样式（ normal规则，不带important规则）</li>
+                        <li>开发人员定义特殊样式（带important规则）</li>
+                        <li>用户在浏览器中定义特殊样式（带important规则）</li>
+                    </ol>
+                    <p>另外还有一些原则：</p>
+                    <ol>
+                        <li>相同的样式在CSS规则后添加了!important的优先于没有添加的。</li>
+                        <li>CSS规则在文档中出现的顺序后面定义的的优先于前面定义的。</li>
+                        <li>内联样式优先于用link引入的样式和页面上&lt;style&gt;里的样式。</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">前端页面有哪三层构成，分别是什么？作用是什么？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>结构层：由 HTML 或 XHTML 之类的标记语言负责创建，仅负责语义的表达。解决了页面“内容是什么”的问题。</li>
+                        <li>表示层：由CSS负责创建，解决了页面“如何显示内容”的问题。</li>
+                        <li>行为层：由脚本负责。解决了页面上“内容应该如何对事件作出反应”的问题。</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">css的基本语句构成是什么？</h2>
+                <div class="answer">
+                    <p>选择符{属性1:值1;属性2:值2;...}等。</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">主流的浏览器分别是什么内核？</h2>
+                <div class="answer">
+                    <ul>
+                        <li>IE：Trident内核</li>
+                        <li>Mozilla FireFox：Gecko内核</li>
+                        <li>Chrome、Safari：Webkit内核</li>
+                        <li>Opera：Presto内核</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">经常遇到的浏览器兼容性有哪些？如何解决？</h2>
+                <div class="answer">
+                    <ol>
+                        <li>浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</li>
+                        <li>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。解决方案是在float的标签样式控制中加入 display:inline;将其转化为行内属性。</li>
+                        <li>在ie6，ie7中元素高度超出自己设置高度。原因是IE8以前的浏览器中会给元素设置默认的行高的高度 导致的。解决方案是加上overflow:hidden或设置line-height为更小的高度。
+                            <pre>.one{
+    height:5px;
+    width:100px;
+    overflow:hidden;
+    background:#F60;
+}
+/*--或--*/
+.one{
+    height:5px;
+    width:100px;
+    font-size:2px;
+    line-height:2px;
+    background:#F60;
+}</pre>
+                            <p>注意这里加了line-height:2px后还要加上font-size才行。</p>
+                        </li>
+                        <li>min-height在IE6下不起作用。解决方案是添加 height:auto !important;height:xxpx;其中xx就是min-height设置的值。</li>
+                        <li>透明性IE用filter:Alpha(Opacity=60)，而其他主流浏览器用 opacity:0.6;</li>
+                        <li>a(有href属性)标签嵌套下的img标签，在IE下会带有边框。解决办法是加上a img{border:none;}样式。</li>
+                        <li>input边框问题。去掉input边框一般用border:none;就可以，但由于IE6在解析input样式时的BUG(优先级问题)，在IE6下无效。
+                            <p>ie6的默认CSS样式，涉及到border的有border-style:inset;border-width:2px;浏览器根据自己的内核解析规则，先解析自身的默认CSS，再解析开发者书写的CSS，达到渲染标签的目的。IE6对INPUT的渲染存在bug，border:none;不被解析，当有border-width或border-color设置的时候才会令IE6去解析border-style:none;。</p>
+                            <p>解决方案是用:border:0或border:0 none;或border:none:border-color:transparent;，推荐用第三种方案。</p>
+                        </li>
+                        <li>父子标签间用margin的问题，表现在有时除IE(6/7)外的浏览器子标签margin转移到了父标签上，IE6&7下没有转移。
+                            <p>解决办法就是父子标签间的间隔建议用padding，兄弟标签间用margin。</p>
+                        </li>
+                        <li>假设两块div，第一块浮动而第二块没有浮动，IE6下第二块就会跑到第一块边上，并且二者之间还留有间距，但标准浏览器中是第二块重合于第一块。
+                            <p>解决办法是改变设计思路，如果真有两个div重合的需求，可以用下面的代码实现：</p>
+                        </li>
+                        <li>父子关系的标签，子标签浮动导致父标签不再包裹子标签。清除浮动就行了</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">如何居中一个浮动元素?</h2>
+                <div class="answer">
+                    父元素和子元素同时左浮动，然后父元素相对左移动50%，再然后子元素相对右移动50%，或者子元素相对左移动-50%也就可以了。
+                </div>
+            </li>
+            <li>
+                <h2 class="question">如何管理CSS文件、JS与图片？</h2>
+                <div class="answer">
+                    父元素和子元素同时左浮动，然后父元素相对左移动50%，再然后子元素相对右移动50%，或者子元素相对左移动-50%也就可以了。
+                    <ol>
+                        <li>对各个项目中CSS，JS里的稳定的通用代码进行提取，形成公共文件，然后利用CDN等资源进行缓存，减轻服务器压力。</li>
+                        <li>去掉JS、CSS里的冗余代码，对代码进行精减。</li>
+                        <li>对JS、CSS进行压缩合并，减少请求次数。</li>
+                        <li>对页面上的小图标，背景等图片进行合并，减少请求次数。</li>
+                        <li>JS、CSS、图片均用版本控制工具进行管理，方便修改与恢复。</li>
+                    </ol>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="title">JavaScript面试题</h2>
+    </div>
+    <div class="main">
+        <ul>
+            <li>
+                <h2 class="question">javascript的typeof返回哪些数据类型</h2>
+                <div class="answer">
+                    Object number function boolean underfind
+                </div>
+            </li>
+            <li>
+                <h2 class="question">例举3种强制类型转换和2种隐式类型转换</h2>
+                <div class="answer">
+                    <p>强制（parseInt,parseFloat,number）</p>
+                    <p>隐式（== – ===）</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">split() join() 的区别</h2>
+                <div class="answer">前者是切割成数组的形式，后者是将数组转换成字符串</div>
+            </li>
+            <li>
+                <h2 class="question">数组方法pop() push() unshift() shift()</h2>
+                <div class="answer">
+                    <p>Push()尾部添加 pop()尾部删除 </p>
+                    <p>Unshift()头部添加 shift()头部删除</p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">IE和DOM事件流的区别</h2>
+                <div class="answer">
+                    <ol>
+                        <li>执行顺序不一样</li>
+                        <li>参数不一样</li>
+                        <li>事件加不加on</li>
+                        <li>this指向问题</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">IE和标准下有哪些兼容性的写法</h2>
+                <div class="answer">
+                    var ev = ev || window.event
+                    <p>
+                        document.documentElement.clientWidth || document.body.clientWidth
+                    </p>
+                    <p>
+                        var target = ev.srcElement||ev.target
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">web storage和cookie的区别</h2>
+                <div class="answer">
+                    <p>
+                        Web Storage的概念和cookie相似，区别是它是为了更大容量存储设计的。1.Cookie的大小是受限的，2.并且每次你请求一个新的页面的时候Cookie都会被发送过去，这样无形中浪费了带宽，3.另外cookie还需要指定作用域，不可以跨域调用。
+                    </p>
+                    <p>
+                        除此之外，Web Storage拥有setItem,getItem,removeItem,clear等方法，不像cookie需要前端开发者自己封装setCookie，getCookie。
+                    </p>
+                    <p>
+                        但是Cookie也是不可以或缺的：Cookie的作用是与服务器进行交互，作为HTTP规范的一部分而存在 ，而Web Storage仅仅是为了在本地“存储”数据而生
+                    </p>
+                    <p>
+                        浏览器的支持除了IE７及以下不支持外，其他标准浏览器都完全支持(ie及FF需在web服务器里运行)，值得一提的是IE总是办好事，例如IE7、IE6中的UserData其实就是javascript本地存储的解决方案。通过简单的代码封装可以统一到所有的浏览器都支持web storage。
+                    </p>
+                    <p>
+                        localStorage和sessionStorage都具有相同的操作方法，例如setItem、getItem和removeItem等
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">请说出三种减少页面加载时间的方法</h2>
+                <div class="answer">
+                    <ol>
+                        <li>优化图片</li>
+                        <li>图像格式的选择（GIF：提供的颜色较少，可用在一些对颜色要求不高的地方）</li>
+                        <li>优化CSS（压缩合并css，如margin-top,margin-left...)</li>
+                        <li>网址后加斜杠（如www.campr.com/目录，会判断这个“目录是什么文件类型，或者是目录。）</li>
+                        <li>标明高度和宽度（如果浏览器没有找到这两个参数，它需要一边下载图片一边计算大小，如果图片很多，浏览器需要不断地调整页面。这不但影响速度，也影响浏览体验。 当浏览器知道了高度和宽度参数后，即使图片暂时无法显示，页面上也会腾出图片的空位，然后继续加载后面的内容。从而加载时间快了，浏览体验也更好了。）
+                        </li>
+                        <li>减少http请求（合并文件，合并图片）。</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">null和undefined的区别</h2>
+                <div class="answer">
+                    <p>
+                        null是一个表示”无”的对象，转为数值时为0；undefined是一个表示”无”的原始值，转为数值时为NaN。
+                    </p>
+                    <p>
+                        当声明的变量还未被初始化时，变量的默认值为undefined。 null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。
+                    </p>
+                    <p>
+                        undefined表示”缺少值”，就是此处应该有一个值，但是还没有定义。典型用法是：
+                        <ol>
+                            <li>变量被声明了，但没有赋值时，就等于undefined。</li>
+                            <li>调用函数时，应该提供的参数没有提供，该参数等于undefined。</li>
+                            <li>对象没有赋值的属性，该属性的值为undefined。</li>
+                            <li>函数没有返回值时，默认返回undefined。</li>
+                        </ol>
+                    </p>
+                    <p>
+                        null表示”没有对象”，即该处不应该有值。典型用法是：
+                        <ol>
+                            <li>作为函数的参数，表示该函数的参数不是对象。</li>
+                            <li>作为对象原型链的终点。</li>
+                        </ol>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">什么叫优雅降级和渐进增强</h2>
+                <div class="answer">
+                    <p>
+                        优雅降级：Web站点在所有新式浏览器中都能正常工作，如果用户使用的是老式浏览器，则代码会检查以确认它们是否能正常工作。由于IE独特的盒模型布局问题，针对不同版本的IE的hack实践过优雅降级了,为那些无法支持功能的浏览器增加候选方案，使之在旧式浏览器上以某种形式降级体验却不至于完全失效.
+                    </p>
+                    <p>
+                        渐进增强：从被所有浏览器支持的基本功能开始，逐步地添加那些只有新式浏览器才支持的功能,向页面增加无害于基础浏览器的额外样式和功能的。当浏览器支持时，它们会自动地呈现出来并发挥作用。
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">一个页面从输入 URL到页面加载显示完成，这个过程中都发生了什么</h2>
+                <div class="answer">
+                    <p>
+                        分为4个步骤：
+                        <ol>
+                            <li>
+                                当发送一个URL请求时，不管这个URL是Web页面的URL还是Web页面上每个资源的URL，浏览器都会开启一个线程来处理这个请求，同时在远程DNS服务器上启动一个DNS查询。这能使浏览器获得请求对应的IP地址。</li>
+                            <li>
+                                浏览器与远程Web服务器通过TCP三次握手协商来建立一个TCP/IP连接。该握手包括一个同步报文，一个同步-应答报文和一个应答报文，这三个报文在 浏览器和服务器之间传递。该握手首先由客户端尝试建立起通信，而后服务器应答并接受客户端的请求，最后由客户端发出该请求已经被接受的报文。
+                            </li>
+                            <li>
+                                一旦TCP/IP连接建立，浏览器会通过该连接向远程服务器发送HTTP的GET请求。远程服务器找到资源并使用HTTP响应返回该资源，值为200的HTTP响应状态表示一个正确的响应。
+                            </li>
+                            <li>此时，Web服务器提供资源服务，客户端开始下载资源。</li>
+                        </ol>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">ajax过程</h2>
+                <div class="answer">
+                    <ol>
+                        <li>创建XMLHttpRequest对象,也就是创建一个异步调用对象.</li>
+                        <li>创建一个新的HTTP请求,并指定该HTTP请求的方法、URL及验证信息.</li>
+                        <li>设置响应HTTP请求状态变化的函数.</li>
+                        <li>发送HTTP请求.</li>
+                        <li>获取异步调用返回的数据.</li>
+                        <li>使用JavaScript和DOM实现局部刷新.</li>
+                    </ol>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">前端安全问题</h2>
+                <div class="answer">
+                    <p>（XSS，sql注入，CSRF） CSRF：是跨站请求伪造，很明显根据刚刚的解释，他的核心也就是请求伪造，通过伪造身份提交POST和GET请求来进行跨域的攻击。
+                    </p>
+                    <p>
+                        **完成CSRF需要两个步骤：**
+                        <ol>
+                            <li>登陆受信任的网站A，在本地生成COOKIE</li>
+                            <li>在不登出A的情况下，或者本地COOKIE没有过期的情况下，访问危险网站B。</li>
+                        </ol>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <h2 class="question">GET和POST的区别，何时使用POST</h2>
+                <div class="answer">
+                    <p>GET：一般用于信息获取，使用URL传递参数，对所发送信息的数量也有限制，一般在2000个字符</p>
+                    <p>POST：一般用于修改服务器上的资源，对所发送的信息没有限制。</p>
+                    <p>
+                        GET方式需要使用Request.QueryString来取得变量的值，而POST方式通过Request.Form来获取变量的值， 也就是说Get是通过地址栏来传值，而Post是通过提交表单来传值。
+                    </p>
+                    <p>
+                        <ul>
+                            <li>无法使用缓存文件（更新服务器上的文件或数据库）</li>
+                            <li>向服务器发送大量数据（POST 没有数据量限制）</li>
+                            <li>发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠</li>
+                        </ul>
+                    </p>
+                </div>
+            </li>
+            li>h2.question+div.answer
+        </ul>
+    </div>
+</body>
+
+</html>
