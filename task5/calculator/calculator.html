@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>计算器</title>
+</head>
+
+<body>
+    <div class="form-inline col-md-offset-3">
+        <input type="number" id="num1" class="form-control" />
+        <select name="op" id="op" class="form-control">
+            <option value=""></option>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <input type="number" id="num2" class="form-control" />
+        <span class="form-control">=</span>
+        <input type="text" id="result" class="form-control" readonly="readonly" />
+        <input type="submit" value="计算" onclick="calculate()" class="btn btn-default" />
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="resource/bootstrap.min.css">
+    <title>学生等级</title>
+    <style>
+    #main {
+        margin-top: 20px;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <!-- 计算等级表单 start -->
+        <form action="#" onsubmit="caculateRank()" class="form-horizontal">
+            <div class="form-group">
+                <label for="score" class="col-md-4 control-label">请输入学生分数</label>
+                <div class="col-md-4">
+                    <input type="number" id="score" class="form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-4">
+                    <button type="submit" class="btn btn-primary">计算等级</button>
+                </div>
+            </div>
+        </form>
+        <!-- 计算等级表单 end -->
+    </div>
+    <script src="score.js"></script>
+</body>
+
+</html>
