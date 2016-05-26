@@ -1,0 +1,203 @@
+/*设置整个页面的视点*/
+
+body {
+    perspective: 2000;
+    -ms-perspective: 2000;
+    -moz-perspective: 2000;
+    -webkit-perspective: 2000;
+}
+
+
+/*立方体样式*/
+
+.cube {
+    position: relative;
+    font-size: 80px;
+    margin: 100px 350px;
+    transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    transform: rotateX(-30deg) rotateY(30deg);
+    -ms-transform: rotateX(-30deg) rotateY(30deg);
+    -moz-transform: rotateX(-30deg) rotateY(30deg);
+    -webkit-transform: rotateX(-30deg) rotateY(30deg);
+    transform-origin: 90px 90px 0;
+    -ms-transform-origin: 90px 90px 0;
+    -moz-transform-origin: 90px 90px 0;
+    -webkit-transform-origin: 90px 90px 0;
+    animation: 5s rolling ease-in-out infinite;
+    -ms-animation: 5s rolling ease-in-out infinite;
+    -moz-animation: 5s rolling ease-in-out infinite;
+    -webkit-animation: 5s rolling ease-in-out infinite;
+}
+
+
+/*旋转动画*/
+
+@keyframes rolling {
+    from,
+    to {}
+    16% {
+        transform: rotateY(-90deg);
+    }
+    33% {
+        transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        transform: rotateY(225deg) rotateZ(135deg);
+    }
+    66% {
+        transform: rotateY(135deg) rotateX(135deg);
+    }
+    83% {
+        transform: rotateX(135deg)
+    }
+}
+
+@-moz-keyframes rolling {
+    from,
+    to {}
+    16% {
+        -moz-transform: rotateY(-90deg);
+    }
+    33% {
+        -moz-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -moz-transform: rotateY(225deg) rotateZ(135deg);
+    }
+    66% {
+        -moz-transform: rotateY(135deg) rotateX(135deg);
+    }
+    83% {
+        -moz-transform: rotateX(135deg)
+    }
+}
+
+@-webkit-keyframes rolling {
+    from,
+    to {}
+    16% {
+        -webkit-transform: rotateY(-90deg);
+    }
+    33% {
+        -webkit-transform: rotateY(-90deg) rotateZ(135deg);
+    }
+    50% {
+        -webkit-transform: rotateY(225deg) rotateZ(135deg);
+    }
+    66% {
+        -webkit-transform: rotateY(135deg) rotateX(135deg);
+    }
+    83% {
+        -webkit-transform: rotateX(135deg)
+    }
+}
+
+
+/*立方体下所有div的样式*/
+
+.cube > div {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border: 1px solid #000;
+    line-height: 180px;
+}
+
+
+/*立方体前面*/
+
+.front {
+    transform: translateZ(90px);
+    -ms-transform: translateZ(90px);
+    -moz-transform: translateZ(90px);
+    -webkit-transform: translateZ(90px);
+    /*设置方格线*/
+    background: linear-gradient(top, transparent 59px, #000 60px), linear-gradient(left, #f00 59px, #000 60px);
+    background: -ms-linear-gradient(top, transparent 59px, #000 60px), -ms-linear-gradient(left, #f00 59px, #000 60px);
+    background: -moz-linear-gradient(top, transparent 59px, #000 60px), -moz-linear-gradient(left, #f00 59px, #000 60px);
+    background: -webkit-linear-gradient(top, transparent 59px, #000 60px), -webkit-linear-gradient(left, #f00 59px, #000 60px);
+    background-size: 60px 60px;
+}
+
+
+/*立方体后面*/
+
+.back {
+    transform: translateZ(-90px) rotateY(-180deg);
+    -ms-transform: translateZ(-90px) rotateY(-180deg);
+    -moz-transform: translateZ(-90px) rotateY(-180deg);
+    -webkit-transform: translateZ(-90px) rotateY(-180deg);
+    /*设置方格线*/
+    background: linear-gradient(top, transparent 59px, #000 60px), linear-gradient(left, #ff0 59px, #000 60px);
+    background: -ms-linear-gradient(top, transparent 59px, #000 60px), -ms-linear-gradient(left, #ff0 59px, #000 60px);
+    background: -moz-linear-gradient(top, transparent 59px, #000 60px), -moz-linear-gradient(left, #ff0 59px, #000 60px);
+    background: -webkit-linear-gradient(top, transparent 59px, #000 60px), -webkit-linear-gradient(left, #ff0 59px, #000 60px);
+    background-size: 60px 60px;
+}
+
+
+/*立方体左面*/
+
+.left {
+    transform: translateX(-90px)rotateY(-90deg);
+    -ms-transform: translateX(-90px)rotateY(-90deg);
+    -moz-transform: translateX(-90px)rotateY(-90deg);
+    -webkit-transform: translateX(-90px)rotateY(-90deg);
+    /*设置方格线*/
+    background: linear-gradient(top, transparent 59px, #000 60px), linear-gradient(left, #fb0 59px, #000 60px);
+    background: -ms-linear-gradient(top, transparent 59px, #000 60px), -ms-linear-gradient(left, #fb0 59px, #000 60px);
+    background: -moz-linear-gradient(top, transparent 59px, #000 60px), -moz-linear-gradient(left, #fb0 59px, #000 60px);
+    background: -webkit-linear-gradient(top, transparent 59px, #000 60px), -webkit-linear-gradient(left, #fb0 59px, #000 60px);
+    background-size: 60px 60px;
+}
+
+
+/*立方体右面*/
+
+.right {
+    transform: translateX(90px)rotateY(90deg);
+    -ms-transform: translateX(90px)rotateY(90deg);
+    -moz-transform: translateX(90px)rotateY(90deg);
+    -webkit-transform: translateX(90px)rotateY(90deg);
+    /*设置方格线*/
+    background: linear-gradient(top, transparent 59px, #000 60px), linear-gradient(left, #0f0 59px, #000 60px);
+    background: -ms-linear-gradient(top, transparent 59px, #000 60px), -ms-linear-gradient(left, #0f0 59px, #000 60px);
+    background: -moz-linear-gradient(top, transparent 59px, #000 60px), -moz-linear-gradient(left, #0f0 59px, #000 60px);
+    background: -webkit-linear-gradient(top, transparent 59px, #000 60px), -webkit-linear-gradient(left, #0f0 59px, #000 60px);
+    background-size: 60px 60px;
+}
+
+
+/*立方体上面*/
+
+.top {
+    transform: translateY(-90px)rotateX(90deg);
+    -ms-transform: translateY(-90px)rotateX(90deg);
+    -moz-transform: translateY(-90px)rotateX(90deg);
+    -webkit-transform: translateY(-90px)rotateX(90deg);
+    /*设置方格线*/
+    background: linear-gradient(top, transparent 59px, #000 60px), linear-gradient(left, #00f 59px, #000 60px);
+    background: -ms-linear-gradient(top, transparent 59px, #000 60px), -ms-linear-gradient(left, #00f 59px, #000 60px);
+    background: -moz-linear-gradient(top, transparent 59px, #000 60px), -moz-linear-gradient(left, #00f 59px, #000 60px);
+    background: -webkit-linear-gradient(top, transparent 59px, #000 60px), -webkit-linear-gradient(left, #00f 59px, #000 60px);
+    background-size: 60px 60px;
+}
+
+
+/*立方体下面*/
+
+.bottom {
+    transform: translateY(90px)rotateX(-90deg);
+    -ms-transform: translateY(90px)rotateX(-90deg);
+    -moz-transform: translateY(90px)rotateX(-90deg);
+    -webkit-transform: translateY(90px)rotateX(-90deg);
+    /*设置方格线*/
+    background: linear-gradient(top, transparent 59px, #000 60px), linear-gradient(left, #fff 59px, #000 60px);
+    background: -ms-linear-gradient(top, transparent 59px, #000 60px), -ms-linear-gradient(left, #fff 59px, #000 60px);
+    background: -moz-linear-gradient(top, transparent 59px, #000 60px), -moz-linear-gradient(left, #fff 59px, #000 60px);
+    background: -webkit-linear-gradient(top, transparent 59px, #000 60px), -webkit-linear-gradient(left, #fff 59px, #000 60px);
+    background-size: 60px 60px;
+}

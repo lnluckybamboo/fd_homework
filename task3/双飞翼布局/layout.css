@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*设置外部容器的宽度，比例缩小时，中间部分依然存在*/
+
+.container {
+    min-width: 500px;
+}
+
+
+/*头部样式*/
+
+header {
+    height: 120px;
+    background: #ff7;
+}
+
+article {
+    /*设置最小高度，当文字超出时，自动增加行高*/
+    min-height: 240px;
+    background: #3fa;
+    overflow: hidden;
+}
+
+
+/*左侧容器，橘色框*/
+
+.left {
+    float: left;
+    width: 200px;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background: #f80;
+}
+
+
+/*中间部分容器，浅蓝色框*/
+
+.inner {
+    margin-left: 200px;
+    margin-right: 150px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background: #3cf;
+}
+
+
+/*身体的外部容器，深蓝色框，被覆盖*/
+
+.center {
+    float: left;
+    width: 100%;
+    background: #009fcc;
+}
+
+
+/*右侧容器，粉色框*/
+
+.right {
+    float: left;
+    width: 150px;
+    margin-left: -150px;
+    /*自己宽度的负值*/
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background: #fa8072;
+}
+
+
+/*底部样式*/
+
+footer {
+    height: 80px;
+    background: #b088ff;
+}

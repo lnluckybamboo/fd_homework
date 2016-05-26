@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*整体面板*/
+
+.container {
+    background: #fff;
+}
+
+
+/*标题部分*/
+
+.title {
+    max-width: 900px;
+    text-align: center;
+    margin: 10px auto;
+    animation: title 2s ease-out infinite forwards;
+}
+
+
+/*标题动画*/
+
+@keyframes title {
+    0% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(30px);
+        opacity: 1;
+    }
+    70% {
+        transform: translate(35px);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(60px);
+        opacity: 0;
+    }
+}
+
+
+/*主体部分*/
+
+.main {
+    max-height: 575px;
+    min-width: 670px;
+    overflow: hidden;
+}
+
+
+/*双飞翼中间部分*/
+
+.middle {
+    float: left;
+    width: 100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*双飞翼新加内部div*/
+
+.inner {
+    margin-left: 150px;
+}
+
+
+/*双飞翼左侧*/
+
+.left {
+    width: 150px;
+    float: left;
+    margin-left: -100%;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+
+/*版权信息*/
+
+.footer {
+    font: italic 18px Simsun, arial, sans-serif;
+    text-align: right;
+    margin-right: 100px;
+}
+
+
+/*太阳样式*/
+
+.sun {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 25px;
+    box-shadow: 0 0 10px rgba(204, 102, 0, .8);
+    background: linear-gradient(to bottom, #fff, #F6D66E);
+    animation: sun 1.5s ease infinite;
+}
+
+
+/*太阳动画 渐变，闪耀*/
+
+@keyframes sun {
+    0% {
+        box-shadow: 0 0 10px rgba(204, 102, 0, .8);
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(204, 102, 0, .3);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(204, 102, 0, .8);
+    }
+}
+
+
+/*屋顶样式*/
+
+.roof {
+    width: 0;
+    height: 0;
+    border: 250px solid #3fa;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    margin: 0 auto;
+    transform: translateY(-225px);
+}
+
+
+/*房子主体样式*/
+
+.house {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    transform: translateY(-225px);
+    background: #fb6;
+}
+
+
+/*窗户样式*/
+
+.window {
+    width: 100px;
+    height: 90px;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    background: #d28eff;
+}
+
+
+/*门样式*/
+
+.door {
+    width: 100px;
+    height: 150px;
+    position: relative;
+    top: 55px;
+    left: 250px;
+    animation: door 5s ease-out infinite;
+    background: #3cf;
+}
+
+
+/*门转动动画*/
+
+@keyframes door {
+    30% {
+        transform-origin: 0 -50%;
+        transform: scaleX(0.5) skewY(-12deg);
+    }
+}

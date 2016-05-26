@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*使用css进行这几个HTML5标签的样式控制。这是因为，通过这种方法创建的新标签，设置为块内元素*/
+
+article,
+footer,
+header,
+nav {
+    display: block;
+}
+
+
+/*body最外层容器样式*/
+
+.container {
+    background: #fff;
+}
+
+nav {
+    margin: 19px 0 5px 0;
+    text-align: right;
+}
+
+
+/*右上方链接样式*/
+
+.link_other {
+    padding-right: 96px;
+}
+
+.link_other a {
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: underline;
+    margin-left: 14px;
+    color: #333;
+}
+
+
+/*光标移动过来样式*/
+
+.link_other a:hover {
+    color: #00C;
+}
+
+
+/*“全部产品”样式*/
+
+#product {
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+
+/*百度logo图片*/
+
+.logo {
+    text-align: center;
+}
+
+
+/*搜索框和搜索按钮*/
+
+.search {
+    margin: 22px auto 0;
+    width: 642px;
+    position: relative;
+}
+
+
+/*百度搜索输入框*/
+
+.searchText {
+    border: 1px solid #b6b6b6;
+    width: 540px;
+    height: 36px;
+    /*解决IE6,7,8输入文字偏上，设置行高和高度一致*/
+    line-height: 36px\9;
+    float: left;
+    /*输入文字时去掉外边框*/
+    /*outline: medium;*/
+    font-size: 18px;
+    font-family: Aria;
+    _margin-right: -3px;
+    behavior: url(ie-css3.htc);
+    /*解决safari浏览器border变粗*/
+    outline: none;
+    -webkit-appearance: none;
+}
+
+
+/*搜索输入框获得焦点*/
+
+.searchText:focus {
+    /*搜索框获得焦点时改变边框颜色*/
+    border: 1px solid #3385ff;
+    /*解决safari浏览器border变粗*/
+    outline: none;
+    -webkit-appearance: none;
+}
+
+
+/*取消显示原有 input-search 的清除按钮*/
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+
+/*百度自定义的清除按钮样式*/
+
+.quickdelete {
+    margin: 2px auto auto 508px;
+    width: 32px;
+    height: 32px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/quickdelete_9c14b01a.png) no-repeat;
+    background-position: 10px 10px;
+    position: absolute;
+    /*默认隐藏*/
+    display: none;
+}
+
+
+/*百度一下按钮*/
+
+.searchSubmit {
+    width: 100px;
+    height: 36px;
+    /*IE6,7,8,9,10高度为38px;*/
+    height: 38px\9;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #3385ff;
+    *border: none;
+    outline: medium;
+    /*光标移动上去变成小手*/
+    cursor: pointer;
+    /*右键点击不会超出边界*/
+    outline: 0px;
+    behavior: url(csshover.htc);
+}
+
+.searchSubmit:hover {
+    background: #317ef3;
+}
+
+footer {
+    height: 63px;
+    position: absolute;
+    bottom: 81px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 890px;
+    height: 63px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+/*加粗字体样式*/
+
+.bold {
+    font: 12px arial;
+    line-height: 23px;
+    color: #4c4c4c;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+/*灰色字体样式*/
+
+.gray {
+    font: 12px arial;
+    float: left;
+    color: #999;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+
+/*footer左侧样式*/
+
+.footer_left {
+    float: left;
+    /*解决浮动IE6产生的双倍距离问题，设置display: inline;*/
+    display: inline;
+    position: relative;
+    margin-left: 126px;
+}
+
+
+/*手机百度样式*/
+
+.mbaidu {
+    float: left;
+    width: 122px;
+    height: 60px;
+    position: relative;
+}
+
+
+/*二维码样式*/
+
+.mBaiduImg,
+.mNuomiImg {
+    width: 60px;
+    height: 60px;
+    float: left;
+}
+
+
+/*文字样式*/
+
+.text {
+    float: right;
+    margin: 7px auto;
+}
+
+
+/*糯米样式*/
+
+.nuomi {
+    float: left;
+    width: 122px;
+    height: 60px;
+    margin-left: 33px;
+}
+
+.footer_right {
+    float: left;
+    margin-left: 33px;
+    width: 328px;
+    height: 55px;
+}
+
+
+/*footer右侧第一行样式*/
+
+.rightone {
+    text-align: left;
+    position: absolute;
+    width: 328px;
+    height: 14px;
+    bottom: 40px;
+}
+
+
+/*footer右侧第二行样式*/
+
+.righttwo {
+    text-align: left;
+    position: absolute;
+    width: 328px;
+    _width: 340px;
+    height: 20px;
+    bottom: 10px;
+}
+
+
+/*footer右侧第一行链接样式*/
+
+.linkone {
+    font: 12px arial;
+    color: #272727;
+    display: inline;
+    text-align: left;
+    height: 14px;
+}
+
+
+/*footer右侧第二行链接和文字样式*/
+
+.linktwo,
+.spantwo {
+    font: 12px arial;
+    color: #666;
+    display: inline;
+    text-align: left;
+    float: left;
+    padding-left: 3px;
+}
+
+
+/*百度版权图片样式*/
+
+.icon {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    /*overflow: hidden;*/
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_0e814c16.png) no-repeat;
+    _background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5c448026.gif);
+    background-position: -600px -96px;
+    position: relative;
+    bottom: 3px;
+}
