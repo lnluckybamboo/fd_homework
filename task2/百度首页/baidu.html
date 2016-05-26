@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maxmum-scale=1.0,user-scalable=0;" />
+    <link rel="stylesheet" type="text/css" href="baidu.css" />
+    <script language="JavaScript" src="baidu.js"></script>
+    <title>百度首页</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 链接集合 start -->
+        <nav>
+            <div class="link_other">
+                <a href="http://www.nuomi.com/?cid=002540"><b>糯米</b></a>
+                <a href="http://news.baidu.com/"><b>新闻</b></a>
+                <a href="http://www.hao123.com/"><b>hao123</b></a>
+                <a href="http://map.baidu.com/"><b>地图</b></a>
+                <a href="http://v.baidu.com/"><b>视频</b></a>
+                <a href="http://tieba.baidu.com/"><b>贴吧</b></a>
+                <a href="https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F">登录</a>
+                <a href="http://www.baidu.com/gaoji/preferences.html" title="搜索设置">设置</a>
+                <a href="http://www.baidu.com/more" title="全部产品" id="product">更多产品</a>
+            </div>
+        </nav>
+        <!-- 链接集合 end -->
+        <!-- 百度主体部分 start -->
+        <div class="center">
+            <!-- 百度logo -->
+            <div class="logo">
+                <img src="https://www.baidu.com/img/bd_logo1.png" width="270px" height="129px" />
+            </div>
+            <!-- 百度搜索框 -->
+            <div class="search">
+                <form action="/s">
+                    <input type="search" id="searchText" name="searchText" autocomplete="off" maxLength="255" oninput="clearShowHide(event)" />
+                    <a href="javascript:clear()" title="清空" class="quickdelete" id="quickdelete"></a>
+                    <input type="submit" value="百度一下" name="searchSubmit" />
+                </form>
+            </div>
+        </div>
+        <!-- 百度主体部分 end -->
+        <footer>
+            <div class="footer">
+                <!-- 左侧二维码 start -->
+                <div class="footer_left">
+                    <div class="mbaidu">
+                        <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/zbios_62c636fe.png" alt="手机百度" width="60px" height="60px">
+                        <div class="text">
+                            <p><span class="bold">手机百度</span></p>
+                            <p><span class="gray">快人一步</span></p>
+                        </div>
+                    </div>
+                    <div class="nuomi">
+                        <img src="https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/home/img/qrcode/nuomi_510f7472.png" alt="百度糯米" width="60px" height="60px">
+                        <div class="text">
+                            <p><span class="bold">百度糯米</span></p>
+                            <p><span class="gray">一元大餐</span></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- 左侧二维码 end -->
+                <!-- 右侧版权信息 start -->
+                <div class="footer_right">
+                    <p class="rightone">
+                        <a class="linkone" href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+                        <a class="linkone" href="http://home.baidu.com/">关于百度</a>
+                        <a class="linkone" href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile">About Baidu</a>
+                    </p>
+                    <p class="righttwo">
+                        <span class="spantwo">&#169;2016</span>
+                        <span class="spantwo">Baidu</span>
+                        <a class="linktwo" href="http://www.baidu.com/duty/">使用百度前必读</a>
+                        <a class="linktwo" href="http://jianyi.baidu.com/">意见反馈</a>
+                        <span class="spantwo">京ICP证030173号</span>
+                        <i class="icon"></i>
+                    </p>
+                </div>
+                <!-- 右侧版权信息 end -->
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

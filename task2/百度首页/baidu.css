@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 19px 0 5px 0;
+    text-align: right;
+}
+
+.link_other {
+    padding-right: 96px;
+}
+
+.link_other a {
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration: underline;
+    margin-left: 14px;
+    color: #333;
+}
+
+.link_other a:hover {
+    color: #00C;
+}
+
+#product {
+    /*“全部产品”样式*/
+    position: absolute;
+    right: 10px;
+    width: 60px;
+    height: 23px;
+    color: white;
+    background: #38f;
+    line-height: 24px;
+    font-size: 13px;
+    text-align: center;
+    border-bottom: 1px solid #38f;
+    margin-left: 19px;
+    margin-right: 2px;
+    text-decoration: none;
+}
+
+.logo {
+    text-align: center;
+}
+
+.search {
+    margin: 22px auto 0;
+    width: 642px;
+    position: relative;
+}
+
+input[type=search] {
+    border: 1px solid #b6b6b6;
+    width: 540px;
+    height: 36px;
+    float: left;
+    /*输入文字时去掉外边框*/
+    outline: medium;
+    font-size: 18px;
+    font-family: Aria;
+}
+
+::-webkit-search-cancel-button {
+    /*取消显示原有 input-search 的清除按钮*/
+    -webkit-appearance: none;
+}
+
+input[type=search]:focus {
+    /*搜索框获得焦点时改变边框颜色*/
+    border: 1px solid #3385ff;
+}
+
+.quickdelete {
+    /*百度自定义的清除按钮样式*/
+    margin: 2px auto auto 508px;
+    width: 32px;
+    height: 32px;
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/quickdelete_9c14b01a.png) no-repeat;
+    background-position: 10px 10px;
+    position: absolute;
+    /*默认隐藏*/
+    display: none;
+}
+
+input[type=submit] {
+    width: 100px;
+    height: 36px;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background: #3385ff;
+    border: 1px solid #3385ff;
+    /*光标移动上去变成小手*/
+    cursor: pointer;
+    /*右键点击不会超出边界*/
+    outline: 0px;
+}
+
+input[type=submit]:hover {
+    background: #317ef3;
+}
+
+footer {
+    height: 63px;
+    position: absolute;
+    bottom: 81px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer {
+    width: 890px;
+    height: 63px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.bold {
+    font: 12px arial;
+    line-height: 23px;
+    color: #4c4c4c;
+    font-weight: bold;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.gray {
+    font: 12px arial;
+    float: left;
+    color: #999;
+    line-height: 23px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.footer_left {
+    float: left;
+    position: relative;
+    margin-left: 126px;
+}
+
+.mbaidu {
+    float: left;
+    width: 122px;
+    height: 60px;
+    position: relative;
+}
+
+.text {
+    float: right;
+    margin: 7px auto;
+}
+
+.nuomi {
+    float: left;
+    width: 122px;
+    height: 60px;
+    margin-left: 33px;
+}
+
+.footer_right {
+    float: left;
+    margin-left: 33px;
+    width: 328px;
+    height: 55px;
+}
+
+.rightone {
+    text-align: left;
+    position: absolute;
+    width: 328px;
+    height: 14px;
+    bottom: 40px;
+}
+
+.righttwo {
+    text-align: left;
+    position: absolute;
+    width: 328px;
+    height: 20px;
+    bottom: 10px;
+}
+
+.linkone {
+    font: 12px arial;
+    color: #272727;
+    display: inline;
+    text-align: left;
+    height: 14px;
+}
+
+.linktwo,.spantwo{
+    font: 12px arial;
+    color: #666;
+    display: inline;
+    text-align: left;
+    float: left;
+    padding-left: 3px;
+}
+
+
+.icon {
+    width: 14px;
+    height: 17px;
+    display: inline-block;
+    /*overflow: hidden;*/
+    background: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_0e814c16.png) no-repeat;
+    _background-image: url(https://ss1.bdstatic.com/5eN1bjq8AAUYm2zgoY3K/r/www/cache/static/protocol/https/global/img/icons_5c448026.gif);
+    background-position: -600px -96px;
+    position: relative;
+    bottom: 3px;
+}

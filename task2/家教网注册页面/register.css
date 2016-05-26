@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(http://www.qdjj.net/images/beijing.gif);
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.container {
+    width: 710px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+}
+
+header {
+    margin: 0 29px;
+    position: relative;
+}
+
+.settings {
+    display: inline;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.settings a {
+    font-size: 12px;
+    color: #FF0099;
+    text-decoration: none;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 30px;
+}
+
+.register_table {
+    border-collapse: collapse;
+    margin: auto 5%;
+}
+
+table span.red {
+    color: #FF0000;
+}
+
+table span.blue {
+    color: #0000ff;
+}
+
+.remark {
+    font-size: 12px;
+    color: #333333;
+    text-align: -webkit-center;
+    font-weight: normal;
+    line-height: 150%;
+    background-image: url(http://www.qdjj.net/images/beijin1.gif);
+}
+
+.link:link {
+    color: #0000cc;
+}
+
+.link:visited {
+    color: #0000cc;
+}
+
+.link:hover {
+    color: #FF0000;
+}
+
+.link:active {
+    color: #FF0000;
+}
+
+.subtitle {
+    color: #003399;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #EEEEEE;
+    line-height: 150%;
+    text-align: left;
+    padding: 3px;
+}
+
+.lefttd {
+    text-align: right;
+    padding-right: 1px;
+    font-size: 12px;
+}
+
+.righttd {
+    text-align: left;
+    padding: 1px;
+    font-size: 12px;
+    line-height: 150%;
+    width: 500px;
+}
+
+fieldset {
+    border: 0;
+}
+
+input[type=checkbox] {
+    margin: 3px;
+}
+
+tfoot {
+    text-align: center;
+}
+
+.submit {
+    text-align: center;
+    width: 86px;
+    height: 21px;
+    padding: 1px 6px;
+    margin: 20px auto;
+}
+
+footer {
+    font-size: 12px;
+    color: ##666666;
+    line-height: 150%;
+    text-align: center;
+    margin-bottom: 20px;
+}

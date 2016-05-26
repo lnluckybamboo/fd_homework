@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -150px;
+}
+
+.container div {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.36);
+}
+
+.top {
+    background-color: #00FF95;
+    margin: 0 100px;
+}
+
+.left {
+    background-color: #D800FF;
+    float: left;
+}
+
+.center {
+    background-color: #FF0081;
+    float: left;
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+}
+
+.right {
+    background-color: #FFE000;
+    float: left;
+}
+
+.bottom {
+    background-color: #00D0FF;
+    margin: 100px;
+}
