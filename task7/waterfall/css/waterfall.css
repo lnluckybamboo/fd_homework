@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    position: relative;
+    float: left;
+}
+
+.content {
+	width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing:border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
