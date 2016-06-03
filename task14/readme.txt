@@ -5,7 +5,6 @@
 1.前台dbms.js文件中，AJAX请求url的参数使用encodeURIComponent进行编码；
 2.后台express中，接收的参数先用decodeURIComponent解码，然后使用自定义的html_encode将特殊字符进行转码，存储在mysql数据库；
 3.前台读取数据库中的数据，自动将转码的特殊字符变成相应的html
-
 我测试的情况有：
 <img src=0 onerror=alert(0)>
 <script>alert(1)</script>
