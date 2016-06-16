@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/mobilenews.css" />
+    <title><%= title %></title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="toolbar">
+                <div class="toolbar-left">
+                    <div data-href="http://m.baidu.com/?from=1000376a" class="toolbar-btn btn-baidu"></div>
+                    <div class="toolbar-btn btn-userhome"></div>
+                </div>
+                <div class="toolbar-right">
+                    <div class="toolbar-btn btn-search"></div>
+                    <div class="toolbar-btn btn-subscribe"></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="divider"></div>
+                <ul>
+                    <li class="active" data-newstype="0">推荐</li>
+                    <li data-newstype="1">本地</li>
+                </ul>
+            </div>
+        </header>
+        <div class="main">
+            <div class="news-list">
+            </div>
+        </div>
+    </div>
+    <script src="/js/jquery-1.12.1.min.js"></script>
+    <script src="/js/mobilenews.js"></script>
+</body>
+
+</html>

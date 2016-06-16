@@ -1,0 +1,236 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: arial;
+    vertical-align: baseline;
+}
+
+header {
+    height: 88px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+/*最上方工具栏*/
+
+.toolbar {
+    position: relative;
+    min-width: 320px;
+    height: 44px;
+    z-index: 2;
+    background-color: #3e98f0;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+    background-image: url(http://ns14.bdstatic.com//static/news/webapp/webappandroid/img/bg-news-logo_344ce44.png);
+    background-repeat: no-repeat;
+    background-position: center 6px;
+    background-size: 77px auto;
+    -webkit-background-size: 77px auto;
+}
+
+
+/*工具栏按钮*/
+
+.toolbar-btn {
+    width: 34px;
+    height: 100%;
+    font-size: 15px;
+    line-height: 44px;
+    float: left;
+}
+
+
+/*工具栏左侧*/
+
+.toolbar-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*工具栏右侧*/
+
+.toolbar-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.btn-baidu,
+.btn-userhome,
+.btn-search,
+.btn-subscribe {
+    border: 0;
+    background-image: url("/images/bg-new-toolbar.png");
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+.btn-baidu {
+    background-position: center 4px;
+}
+
+.btn-userhome {
+    background-position: center -463px;
+    margin-left: 10px;
+}
+
+.btn-search {
+    background-position: center -162px;
+    margin-right: 10px;
+}
+
+.btn-subscribe {
+    background-position: center -107px;
+}
+
+
+/*新闻类型导航*/
+
+.nav {
+    position: relative;
+    background-color: #3e98f0;
+    overflow: hidden;
+    z-index: 2;
+    color: #fff;
+}
+
+.divider {
+    height: 1px;
+    margin: 0 10px;
+    background-color: #5dabf0;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0 10px;
+}
+
+.nav ul li {
+    float: left;
+    margin: 10px;
+    padding-bottom: 3px;
+    cursor: pointer;
+}
+
+.nav ul li.active {
+    border-bottom: 1px solid #fff;
+}
+
+.main {
+    width: 100%;
+    position: absolute;
+    top: 88px;
+    bottom: 0;
+    overflow: auto;
+}
+
+
+/*新闻列表*/
+
+.news-list {
+    position: relative;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+/*每一个新闻项*/
+
+.news-item {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    overflow: hidden;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+
+/*新闻图片*/
+
+.news-image {
+    font-size: 0;
+    height: 68px;
+    vertical-align: middle;
+    width: 95px;
+    text-align: center;
+    overflow: hidden;
+    border: 1px solid #e8e8e8;
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+    background-color: #f4f7f9;
+    position: relative;
+}
+
+.news-image img {
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+}
+
+
+/*新闻主体内容*/
+
+.news-main-text {
+    max-height: 40px;
+    overflow: hidden;
+}
+
+
+/*新闻标题*/
+
+.news-title {
+    font-size: 16px;
+    line-height: 20px;
+    color: #262b31;
+    margin: -1px 0 4px 0;
+}
+
+
+/*新闻内容*/
+
+.news-content {
+    font-size: 13px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
+
+
+/*新闻底部*/
+
+.news-bottom {
+    margin-top: 10px;
+}
+
+.news-time {
+    text-align: left;
+    font-size: 12px;
+    line-height: 20px;
+    color: #b8bac0;
+    font-weight: 400;
+}
