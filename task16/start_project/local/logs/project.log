@@ -1,0 +1,48 @@
+2016-06-15T01:19:45.458Z - normal: Load ~/.CocosCreator/settings.json
+2016-06-15T01:19:45.471Z - normal: checking language setting...
+2016-06-15T01:19:45.471Z - normal: Language: zh
+2016-06-15T01:19:45.520Z - success: protocol editor-framework registerred
+2016-06-15T01:19:45.520Z - success: protocol app registerred
+2016-06-15T01:19:45.520Z - success: protocol packages registerred
+2016-06-15T01:19:45.520Z - success: protocol unpack registerred
+2016-06-15T01:19:45.723Z - normal: connected!
+2016-06-15T01:19:45.729Z - normal: Check project E:\front_develop\homework\task16\start_project
+2016-06-15T01:19:45.734Z - normal: Initializing Cocos Creator Editor
+2016-06-15T01:19:47.603Z - normal: Initializing Cocos2d
+2016-06-15T01:19:49.305Z - normal: Initializing Asset Database
+2016-06-15T01:19:49.391Z - success: protocol uuid registerred
+2016-06-15T01:19:49.392Z - success: protocol uuid registerred
+2016-06-15T01:19:49.392Z - success: protocol thumbnail registerred
+2016-06-15T01:19:49.392Z - normal: Loading editor/builtin packages
+2016-06-15T01:19:49.856Z - success: assets loaded
+2016-06-15T01:19:49.862Z - success: builder loaded
+2016-06-15T01:19:49.876Z - success: hierarchy loaded
+2016-06-15T01:19:49.886Z - success: inspector loaded
+2016-06-15T01:19:49.890Z - success: keystore loaded
+2016-06-15T01:19:49.903Z - success: node-library loaded
+2016-06-15T01:19:49.914Z - success: preferences loaded
+2016-06-15T01:19:49.984Z - success: project-importer loaded
+2016-06-15T01:19:50.001Z - success: project-settings loaded
+2016-06-15T01:19:50.009Z - success: ui-kit loaded
+2016-06-15T01:19:50.028Z - success: ui-grid loaded
+2016-06-15T01:19:50.044Z - success: scene loaded
+2016-06-15T01:19:50.048Z - success: sprite-editor loaded
+2016-06-15T01:19:50.084Z - success: timeline loaded
+2016-06-15T01:19:50.089Z - success: ui-kit-extra loaded
+2016-06-15T01:19:50.089Z - normal: Loading builtin packages
+2016-06-15T01:19:50.102Z - success: asset-db-debugger loaded
+2016-06-15T01:19:50.106Z - success: code-editor loaded
+2016-06-15T01:19:50.107Z - success: color-picker loaded
+2016-06-15T01:19:50.122Z - success: console loaded
+2016-06-15T01:19:50.129Z - success: package-manager loaded
+2016-06-15T01:19:50.142Z - success: tester loaded
+2016-06-15T01:19:50.146Z - success: ui-tree loaded
+2016-06-15T01:19:50.269Z - normal: Initializing project E:\front_develop\homework\task16\start_project
+2016-06-15T01:19:50.277Z - normal: Loading packages
+2016-06-15T01:19:50.282Z - normal: Run Application
+2016-06-15T01:19:52.174Z - success: preview server running at http://localhost:7456
+2016-06-15T01:20:01.346Z - normal: 1.1.0
+2016-06-15T01:20:53.244Z - normal: Compiled successfully
+2016-06-15T01:20:57.044Z - normal: 1.1.0
+2016-06-15T01:20:58.212Z - normal: Built to "E:\front_develop\homework\task16\start_project\build" successfully
+2016-06-15T01:40:28.677Z - info: shutdown preview server

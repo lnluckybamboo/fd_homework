@@ -1,0 +1,13 @@
+{
+  "excludeScenes": [],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.start_project",
+  "startScene": "fc8f0f97-44ad-40c0-8dc1-d2e6e6e327b0",
+  "title": "start_project",
+  "webOrientation": "auto"
+}

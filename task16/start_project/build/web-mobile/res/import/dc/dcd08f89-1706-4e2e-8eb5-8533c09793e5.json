@@ -1,0 +1,1 @@
+[{"__type__":"cc.Prefab","_name":"star","data":{"__id__":1}},{"__type__":"cc.Node","_name":"star","_contentSize":{"__type__":"cc.Size","width":60,"height":66},"_components":[{"__type__":"cc.Sprite","node":{"__id__":1},"_spriteFrame":{"__uuid__":"638205ef-4601-4384-b2c0-b20dac2ef6d6"}},{"__type__":"95c29f591xAg4FZiIeJABWz","node":{"__id__":1},"pickRadius":60}]}]
